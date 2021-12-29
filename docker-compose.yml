@@ -1,0 +1,25 @@
+version: "3"
+services:
+
+  server:
+    env_file: 
+      - ./backend/env/env.sh
+    # environment:
+    #   - TEST=3000
+    container_name: pinet-backend
+    image: pinet-backend
+    restart: always
+    build: ./backend
+    ports:
+      - "8054:8054"
+    links:
+      - mongo-database
+
+  mongo-database:
+    container_name: mongo-database
+    image: mongo
+    restart: always
+    volumes:
+      - ./database:/data/db
+    ports:
+      - '27022:27017'

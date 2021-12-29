@@ -1,0 +1,12 @@
+export APP_MODE=DEVELOPMENT
+# export APP_MODE=PRODUCTION
+
+export DB_NAME=
+export DB_PORT=
+export DB_CONNECTION=
+export DB_HOST=
+export SESSION_SECRET=
+
+export CLIENT_URL=
+
+export SALT_ROUNDS=

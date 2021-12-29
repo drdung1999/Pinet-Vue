@@ -1,2 +1,2 @@
-# pinet-vue
-Chat application with Vuejs and Nodejs
+# Pinet-Vue
+Chat application with Vue
